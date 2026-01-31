@@ -20,6 +20,10 @@ variable "instance_types" {
   type        = list(string)
  
 }
+variables "kubernetes_version" {
+
+
+}
 
 variable "desired_capacity" {
   description = "Desired number of worker nodes"
