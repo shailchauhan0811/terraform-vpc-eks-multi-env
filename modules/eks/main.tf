@@ -74,6 +74,7 @@ resource "aws_eks_node_group" "node_group" {
   subnet_ids     = var.subnet_ids
 
   instance_types = var.instance_types
+  version = var.kubernetes_version
 
   scaling_config {
     desired_size = var.desired_capacity
