@@ -9,7 +9,7 @@ private_subnets = ["10.0.10.0/24", "10.0.20.0/24", "10.0.30.0/24"]
 
 project_name       = "ihub"
 cluster_name       = "ihub-stage-cluster"
-kubernetes_version = "1.33"
+kubernetes_version = "1.34"
 
 instance_types   = ["t3.medium"]
 desired_capacity = 1
