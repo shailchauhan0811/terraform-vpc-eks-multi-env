@@ -1,0 +1,19 @@
+# Production Environment Configuration
+# Copy this file to terraform.tfvars and update values as needed
+
+vpc_cidr_block = "10.0.0.0/16"
+aws_region = "ap-south-1"
+
+env = "prod"
+
+public_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+private_subnets = ["10.0.10.0/24", "10.0.20.0/24", "10.0.30.0/24"]
+
+project_name = "ihub"
+cluster_name = "ihub-prod-cluster"
+kubernetes_version = "1.32"
+
+instance_types = ["t3.medium"]
+desired_capacity = 2
+min_capacity = 1
+max_capacity = 3
