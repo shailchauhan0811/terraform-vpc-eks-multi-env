@@ -24,6 +24,9 @@ variable "instance_types" {
   description = "EC2 instance types for worker nodes"
   type        = list(string)
 }
+variable "kubernetes_version" {
+
+}
 
 variable "desired_capacity" {
   description = "Desired number of worker nodes"
